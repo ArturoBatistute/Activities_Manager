@@ -1,13 +1,16 @@
-import { activitiesEntryData } from "./components/activitiesEntryData";
-import { activitiesList } from "./components/activitiesList";
+import { Component } from "react";
+import ActivitiesEntryData from "./components/ActivitiesEntryData";
+import ActivitiesList from "./components/ActivitiesList";
 
-function App() {
-  return (
-    <section>
-      <activitiesEntryData/>
-      <activitiesList/>
-    </section>
-  );
+class App extends Component{
+  render(){
+    return (
+      <form>
+        <ActivitiesEntryData/>
+        <ActivitiesList/>
+      </form>
+    );
+  }
 }
 
 export default App;
