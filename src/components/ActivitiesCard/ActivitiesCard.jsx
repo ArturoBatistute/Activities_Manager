@@ -5,10 +5,10 @@ class ActivitiesCard extends Component{
     render(){
         return(
             <section className="activities-card">
-                <header>
-                    <h3>Title</h3>
+                <header className="activities-card_header">
+                    <h3 className="activities-card_title">Title</h3>
                 </header>
-                <p>Write ur activity here</p>
+                <p className="activities-card_body">Write ur activity here</p>
             </section>
         );
     }
