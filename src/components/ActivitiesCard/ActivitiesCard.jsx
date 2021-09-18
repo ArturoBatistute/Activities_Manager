@@ -1,9 +1,10 @@
 import { Component } from "react";
+import "./style.css"
 
 class ActivitiesCard extends Component{
     render(){
         return(
-            <section>
+            <section className="activities-card">
                 <header>
                     <h3>Title</h3>
                 </header>

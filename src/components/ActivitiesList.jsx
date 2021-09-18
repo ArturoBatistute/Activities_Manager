@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import ActivitiesCard from "./ActivitiesCard";
+import ActivitiesCard from "./ActivitiesCard/ActivitiesCard";
 
 class ActivitiesList extends Component{
 
     render(){
         return(
             <ul>
-                {Array.of("Priority", "Hold", "To Begin").map((categories) => {
+                {Array.of("Priority", "Hold", "To Begin").map((categories, index) => {
                     return(
-                        <li>
-                            <div>{categories}</div>
+                        <li key={index}>
+                            
                             <ActivitiesCard/>
                         </li>
                     );   
